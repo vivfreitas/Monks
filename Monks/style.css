@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ver vazantos 
+        outline: 1px solid red;
+    */
+}
+/*
+ SE ESCONDER CONTEÚRO É PQ TEM VAZAMENTO.
+html, body {
+  overflow-x: hidden;
+}*/
+
+body{
+
+    background-color: #EAE8E4;
+}
+/* HEADER */
+header {
+    position: relative;
+    overflow: hidden;
+    height: 480px;
+    background-color: #2D2D2D;
+    display: flex;
+    border-end-end-radius: 30px;
+    border-end-start-radius: 30px;
+    flex-direction: column;
+}
+#img-principal{
+    position: absolute;
+    width: 453px;
+    top: 1px;
+    right: 150px;
+}
+.img-monks-figma{
+    height: 480px;
+    width: 800px;
+}
+/* NAV */
+#nav-desktop{
+    display: flex;
+    margin-left:5%;
+    align-items: center;
+    gap: 70px;
+    
+}
+.nav-categories {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+
+}
+/* ------------------------------------------------------------------------------- */
+.monks-nav{
+    color: #EAE8E4;
+}
+#monks-logo{
+    font-size: 28px;
+    font-weight: bolder;
+}
+#introduction-loren{
+    margin-top: 10vh;
+    margin-left: 5%;
+}
+#introduction-loren p{
+    color: #EAE8E4;
+}
+#title {
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: bold;
+}
+#descricao{
+    margin-top: 20px;
+}
+/* ------------------------------------------------------------------------------- */
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* CARDS INICIAIS */
+#principal{
+    width: 90%;
+    margin-top: 30px;
+}
+.p-default{
+    color: #2D2D2D;
+    
+}
+#demonstration-1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.cards-default{
+    width: 265px;
+    height: 314px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(197, 197, 197);
+
+}
+#cards{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, 265px);
+    justify-content:center;
+    margin-top: 40px;
+}
+.cards-default img{
+    width: 95%;
+    height: 60%;
+    border-radius: 10px;
+}
+.descricao-div{
+    margin: 20px;
+    width: 94%;
+}
+#p-description{
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+/* ------------------------------------------------------------------------------- */
+/* CARDS DOS PRÉDIOS */
+#principal1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 10px;
+  padding: 10px;
+}
+#imagens{
+    display: flex;
+    flex-direction: column;
+}
+.texto-imagem{
+    width: 450px;
+
+}
+.img-esquerda{
+    margin-top: 20px;
+    width: 450px;
+    height: 480px;
+    border-radius: 8px;
+}
+.img{
+    box-shadow: 5px 5px 5px rgb(165, 165, 165);
+    border-radius: 25px;
+}
+.img-direita {
+  width: 450px;
+  height: 300px;
+}
+
+#img-direita {
+  margin-top: 20px;
+}
+#testeH1{
+    font-weight: 400;
+}
+/* ------------------------------------------------------------------------------- */
+
+/* CARD COM A APPLE E ANDROID */
+#principal2{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    background-color: #3C0C60;
+    gap: 50px;
+    justify-content: space-evenly;
+    justify-items: end;
+    align-items: center;
+    width: 60%;
+}
+#descricao-store h2{
+    width: 150%;
+}
+#store{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.stores{
+    width: 150px;
+}
+
+.categories-style{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #DFDCD5;
+    border: 1px solid #7D26C9;
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------------------- */
+
+/* ÚLTIMOS CARDS */
+#principal3{
+    display: flex;
+    justify-content: center;
+}
+#categories-principal{
+    gap: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.categories-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categories-style p{
+    color: #7D26C9;
+}
+.card-principal4{
+    box-shadow: 5px 5px 5px rgb(197, 197, 197);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 375.33px;
+    padding: 20px;
+    height: 246px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #7D26C9;
+}
+
+#principal4{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap:60px;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 80px;
+}
+.h2-principal4{
+    font-weight: 400;
+}
+#button-principal4{
+    display: flex;
+    justify-content: center;
+
+}
+#button-principal4 button{
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    font-size: 17px;
+    color: #2D2D2D;
+    background-color: #DFBBFE;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------------------------- */
+/* FOOTER */
+footer{
+    background-color: #2D2D2D;
+    padding: 50px;
+}
+
+#formulario{
+    background-color:#EAE8E4 ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    border-radius: 15px;
+    padding: 25px;
+}
+
+#footer-principal1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 800px));
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-items: center;
+}
+#formulario-img{
+    grid-column: span 1;
+}
+#formulario-img{
+    width: 400px;
+}
+#form-tag{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+#resposta_usuario{
+    position: absolute;
+    top: 130px;
+}
+.input-form{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 15px;
+}
+#teste-desafio{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.p-footer{
+    font-size: 25px;
+    font-weight: 500;
+}
+.numbers-footer{
+    font-weight: bold;
+    color: #7D26C9;
+}
+.sum-input{
+    width: 200px;
+}
+#button-sum{
+    padding: 10px;
+    width: 200px;
+    background-color: #DFBBFE;
+    color: #9f9f9f;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bi{
+    font-size: 35px;
+    color: #ffffff;
+    cursor: pointer;
+}
+#icons{
+    margin-bottom: 25px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 60px);
+    justify-items: center;
+}
+#final{
+    display: grid;
+    justify-content: center;
+    border-top: 1px solid #DFBBFE;
+    padding: 25px;
+    grid-template-columns: 45%;
+}
+#final p {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+#final ul{
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    color: #ffffff;
+    justify-items: center;
+}
+/* ---------------------------------------------------------------------------------- */
+
+/* RESPONSIVIDADE */
+#nav-mobile-categories{
+    display: none; 
+}
+@media (max-width: 1478px){
+    #cards{
+       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    #container{
+       justify-items: center;
+
+    }
+
+    #formulario-img{
+        width: 200px;
+    }
+    #footer-principal1{
+       grid-template-columns: 300px 400px;
+       gap: 50px;
+    }
+    #h1-formulario{
+        font-size: 25px;
+    }
+    .input-form{
+        width: 47%;
+    }
+    #teste-desafio p{
+        font-size: 18px;
+    }
+    #final ul {
+        grid-template-columns: 100px 100px;
+    }
+
+    #principal4{
+        grid-template-columns: 350px 350px;
+    }
+    #container {
+        width: 100%;
+    }
+    #title{
+        width: 70%;
+        font-size: 30px;
+    }
+    
+
+    @media (max-width: 1434px){
+        #cards{
+            grid-template-columns: 350px 350px;
+        }
+    }
+}
+@media (max-width: 1390px){
+
+#img-principal{
+    width: 454px;
+    top: 0.1px;
+    right: 20px;
+}
+
+.nav-categories{
+        display: none;
+    }
+#nav-mobile{
+    cursor: pointer;
+    padding: 5px;
+}
+.line-button {
+    margin-top: 5px;
+    background-color: #DFDCD5;
+    height: 2px;
+    width:30px;
+    border-radius: 5px;
+}
+
+#nav-mobile-categories{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    padding: 15px;
+    width: 100%;
+    right: 7px;
+    left: 0.1px;
+    top: 60px;
+    height: 45vh;
+    background-color: #DFBBFE;
+    border-end-end-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.nav-mobile{
+    cursor: pointer;
+}
+.nav-mobile li {
+    color: #2D2D2D;
+    font-size: 18px;
+    margin-left:15%;
+    font-weight: bold;
+    margin-bottom: 12px;
+    }
+}
+@media (max-width: 1286px){
+    #descricao{
+        width: 400px;
+    }
+}
+@media (max-width: 1026px){
+
+    #img-principal{
+    width: 453px;
+    top: 1px;
+    right: 20px;
+}
+    #cards{
+        justify-items: center;
+        gap: 80px;
+    }
+    #container{
+        grid-template-columns: repeat(auto-fit, minmax(repeat(auto-fit, minmax(270px, 1fr))));
+        
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* TABLET 768px */
+    @media(min-width: 767px){
+        #cards{
+        grid-template-columns: 250px 250px;
+    }
+}
+}
+@media (max-width: 1000px){
+    #title{
+        width: 50%;
+    }
+}
+@media (max-width:892px){
+    #descricao-store h2{
+        width: auto;
+    }
+    #descricao{
+        width: 40%;
+    }
+    #container{
+        grid-template-columns: 470px;
+    }
+    .nav-categories{
+        display: none;
+    }
+
+    .card-principal4{
+        width: 300px;
+    }
+    #formulario{
+        grid-template-columns: auto;
+    }
+    #cards{
+        grid-template-columns: 300px;
+    }
+    #descricao-store p{
+        width: 80%;
+    }
+    .stores{
+        width: 40%;
+    }
+    #icons{
+        grid-template-columns: repeat(auto-fit, 50px);
+    }
+}
+@media (max-width: 824px){
+    #descricao{
+        width: 25%;
+    }
+    #img-principal{
+        width: 380px;
+        height: 500px;
+        right: -40px;
+    }
+}
+@media (max-width: 768px){
+    #footer-principal1{
+        grid-template-columns: 1fr;
+    }
+    #principal4{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media(max-width: 706px){
+    #img-principal{
+        width: 350px;
+        top: 1px;
+        height: 479px;
+    }
+    #nav-desktop{
+        gap: 20px;
+    }
+
+    #descricao-store h2{
+        width: auto;
+    }
+}
+@media (max-width:610px){
+    #icons{
+        grid-template-columns: repeat(auto-fit, 35px);
+    }
+}
+@media (max-width: 570px){
+    #img-principal{
+        width: 350px;
+        top: 1px;
+        right: -70px;
+        height: 479px;
+    }
+    #descricao{
+        width: 50%;
+    }
+
+        #descricao-store h2{
+        font-size: 18px;
+        width: auto;
+    }
+    #descricao-store{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 501px){
+    #img-principal{
+        width: 350px;
+        top: 1px;
+        height: 479px;
+    }
+}
+@media (max-width: 480px){
+
+
+    #img-principal{
+        width: 350px;
+        right: -110px;
+    }
+}
+@media (max-width: 470px){
+
+    #img-principal{
+        width: 320px;
+        top: 1px;
+        height: 479px;
+        right: -80px;
+    }
+
+    #nav-desktop{
+        width: 50%;
+    }
+    #title{
+        width: 180px;
+        font-size: 24px;
+    }
+    #descricao{
+        width: 60%;
+        font-size: 12px;
+    }
+    #introduction-loren{
+        width: 60%;
+    }
+    .card-principal4{
+        width: 300px;
+    }
+    #cards{
+        grid-template-columns: auto;
+    }
+    .img{
+        width: 350px;
+    }
+    #container{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+    #descricao-store h2 {
+        font-size: 18px;
+        width: auto;
+    }
+    #descricao-store p{
+        width: auto;
+    }
+    #formulario{
+        grid-template-columns: auto;
+    }
+    #form-tag{
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-form{
+        width: auto;
+    }
+    #final{
+        grid-template-columns: auto;
+    }
+    #final ul{
+        padding: 0;
+    }
+    #demonstration-1 {
+        font-size: 25px;
+    }
+    #testeH1{
+        font-size: 25px;
+    }
+    .stores{
+        width: 200px;
+    }
+}
+@media (max-width: 375px){
+    #img-principal{
+        
+        overflow: visible;  /* Garante que a imagem em si não se corte */
+
+        /* Ajuste fino da posição e tamanho */
+        width: 280px;
+        height: 500px;
+        top: -20px;         /* Puxe para cima */
+        right: -125px;       /* Empurre para a direita (para fora da tela) */
+
+    }
+    #icons{
+        grid-template-columns: repeat(auto-fit, 50px);
+    }
+    .card-principal4{
+        width: 300px;
+    }
+    #title{
+        width: 190px;
+        font-size: 18px;
+    }
+    #descricao{
+        width: 190px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px){
+
+    .img{
+        width: 260px;
+    }
+    #formulario{
+        width: 300px;
+    }
+    #h1-formulario{
+        font-size: 15px;
+        width: 80%;
+    }
+    .p-mobile{
+        width: 80%;
+    }
+    .input-form{
+        width: 80%;
+    }
+}
